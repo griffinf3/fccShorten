@@ -1,0 +1,42 @@
+doctype html
+head
+    title URL shortener Microservice
+    |     
+    meta(name='description', content='FCC API project No. 3')
+    |     
+    link#favicon(rel='icon', href='https://glitch.com/edit/favicon-app.ico', type='image/x-icon')
+    |     
+    meta(charset='utf-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |     
+    link(rel='stylesheet', href='/style.css')
+  body
+    .container
+      header
+        h1
+          a(href='https://freecodecamp.com', target='blank') Free Code Camp
+          |  URL Shortener
+        |       
+        h2
+          | Backend API Project No. 3 by Franklin Griffin
+      |     
+      form(action='/', method='post')
+        input#url(type='test', name='url', placeholder='Enter a URL here.')
+        |       
+        input(type='submit', value='Shorten')
+    |     
+    div
+    |   
+    div
+       h3
+        | Original URL:   &nbsp; 
+        a(href='#{pageData.name[0]}', target='_blank') #{pageData.name[0]}
+        | 
+       h3
+        | Shortened URL:   &nbsp; 
+        a(href='#{pageData.name[1]}', target='_blank') #{pageData.name[1]}
+       
+       

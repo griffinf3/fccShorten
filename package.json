@@ -1,0 +1,30 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "FCCurlShortenerProject",
+  "version": "0.0.1",
+  "description": "url shortener project",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/griffinf3/fccShorten.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "body-parser": "^1.18.1",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.11",
+    "valid-url": "^1.0.9",
+    "jade": "^1.11.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
